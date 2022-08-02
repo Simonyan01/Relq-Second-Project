@@ -7,7 +7,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, rgb(227, 110, 26) 15%, rgb(209, 21, 62));
+    background-image:
+        radial-gradient(80% 80% ellipse at center top, #2a2756 0%, rgba(0, 0, 0, 0) 100%),
+        radial-gradient(50% 40% ellipse at center bottom, #261226 0%, #100a1c 80%);
 }
 
 .calculator-grid {
@@ -31,14 +33,15 @@ body {
     box-shadow: 0 0 12px;
 }
 
-.calculator-grid button:hover {
-    background: #a9a9a9;
+.calculator-grid>button:hover {
+    background: #5b56c2;
 }
 
 .practical-button {
     grid-column: span 2;
-    background-color: rgba(179, 168, 168, 0.8);
+    background-color: rgba(152, 140, 140, 0.8);
     transition: color .2s linear !important;
+    text-shadow: 0 0 1px #000000;
     box-shadow: 0 0 10px rgb(0, 0, 0) !important;
 }
 
