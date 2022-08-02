@@ -39,15 +39,18 @@ body {
 
 .practical-button {
     grid-column: span 2;
-    background-color: rgba(152, 140, 140, 0.8);
-    transition: color .2s linear !important;
+    background: -webkit-linear-gradient(45deg, #c97874 10%, #ca28ac 90%) !important;
     text-shadow: 0 0 1px #000000;
-    box-shadow: 0 0 10px rgb(0, 0, 0) !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    margin: 0 auto 6em;
+    max-width: 9em;
+    transition: background 3s linear !important;
 }
 
 .practical-button:hover {
-    color: rgb(0, 0, 0);
-    background: rgba(154, 105, 105, 0.8) !important;
+    background: -webkit-linear-gradient(45deg, #ca28ac 10%, #c97874 90%) !important;
 }
 
 .result {
