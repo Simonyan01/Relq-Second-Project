@@ -8,8 +8,8 @@ body {
     margin: 0;
     padding: 0;
     background-image:
-        radial-gradient(80% 80% ellipse at center top, #2a2756 0%, rgba(0, 0, 0, 0) 100%),
-        radial-gradient(50% 40% ellipse at center bottom, #261226 0%, #100a1c 80%);
+        radial-gradient(80% 80% ellipse at center top, #443f86 0%, rgba(69, 79, 187, 0) 100%),
+        radial-gradient(50% 40% ellipse at center bottom, #312531 0%, #1e1232 80%);
 }
 
 .calculator-grid {
@@ -19,7 +19,7 @@ body {
     align-items: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 80px);
-    grid-template-rows: minmax(100px, auto) repeat(7, 80px);
+    grid-template-rows: minmax(100px, auto) repeat(7, 75px);
 }
 
 .calculator-grid button {
@@ -27,27 +27,29 @@ body {
     font-size: x-large;
     border: 1px ridge #000000;
     outline: none;
-    transition: background .2s linear !important;
+    transition: background .3s linear !important;
     border-radius: 7px;
     margin: 2px;
     box-shadow: 0 0 12px;
+
 }
 
 .calculator-grid>button:hover {
-    background: #5b56c2;
+    background: -webkit-linear-gradient(80deg, #9b96f9 10%, #7d78da 90%)
 }
 
 .practical-button {
     grid-column: span 2;
-    background: -webkit-linear-gradient(45deg, #c97874 10%, #ca28ac 90%) !important;
+    background: -webkit-linear-gradient(45deg, #c97874 10%, #ca28ac 90%);
     text-shadow: 0 0 1px #000000;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     -webkit-text-fill-color: transparent;
     font-weight: 400;
     margin: 0 auto 6em;
     max-width: 9em;
-    transition: background 3s linear !important;
+    transition: background .4s linear !important;
 }
+
 
 .practical-button:hover {
     background: -webkit-linear-gradient(45deg, #ca28ac 10%, #c97874 90%) !important;
@@ -65,10 +67,13 @@ body {
 
 .result .previous {
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
+
+
 
 .result .current {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+
 }
